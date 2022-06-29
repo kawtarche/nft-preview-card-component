@@ -1,0 +1,108 @@
+/*Déclaration de couleurs*/
+:root {
+    /*color primary*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --cyan-transparent: hsla(178, 100%, 50%, 0.45);
+    /* neutral color*/
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-card-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* style des élements développé    */
+
+body {
+    background-color: var(--very-dark-blue);
+    font-size: 18px;
+
+}
+
+section.nft-card {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--very-dark-blue-card-BG);
+    border: 20px solid var(--very-dark-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+   /* box-shadow: 10px 5px 5px red;*/
+}
+
+
+
+h1.title {
+    color: var(--cyan);
+}
+
+p.description {
+    color: var(--soft-blue);
+}
+
+div.nft-photo {
+    background-color: #194031;
+    background-image: url('../images/image-equilibrium.jpg');
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+img.view-photo {
+    display: none;
+}
+
+div.nft-photo:hover img.view-photo {
+    display: block;
+    cursor: pointer;
+}
+
+div.container-calque {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div.nft-photo:hover div.container-calque {
+    background-color: var(--cyan-transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.container-price{
+    color:var(--cyan);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.container-days-left{
+    color:var(--soft-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.author{
+    color:var(--soft-blue);
+    display: flex;
+    align-items: center;
+}
+span.full-name{
+    color: var(--cyan);
+}
+div.details-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img.avatar-img{
+    height: 40px;
+}
