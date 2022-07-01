@@ -9,13 +9,15 @@
     --very-dark-blue-card-BG: hsl(216, 50%, 16%);
     --very-dark-blue-card-line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
+
+    --img-width:300px;
 }
 
 /* style des élements développé    */
 
 body {
     background-color: var(--very-dark-blue);
-    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
 
 }
 
@@ -23,29 +25,31 @@ section.nft-card {
     width: fit-content;
     height: fit-content;
     background-color: var(--very-dark-blue-card-BG);
-    border: 20px solid var(--very-dark-blue);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-   /* box-shadow: 10px 5px 5px red;*/
+    padding: 10px 20px;
+    margin : auto;
 }
 
-
-
 h1.title {
-    color: var(--cyan);
+    color: var(--white);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+p span.full-name{
+    color: var(--white);
+
 }
 
 p.description {
     color: var(--soft-blue);
+    font-weight: 300;
 }
 
 div.nft-photo {
     background-color: #194031;
     background-image: url('../images/image-equilibrium.jpg');
-    width: 300px;
-    height: 300px;
+    width: var(--img-width);
+    height: var(--img-width);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -63,8 +67,8 @@ div.nft-photo:hover img.view-photo {
 }
 
 div.container-calque {
-    width: 300px;
-    height: 300px;
+    width: var(--img-width);
+    height: var(--img-width);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -76,6 +80,8 @@ div.nft-photo:hover div.container-calque {
     align-items: center;
 
 }
+
+
 div.container-price{
     color:var(--cyan);
     display: flex;
@@ -93,6 +99,9 @@ div.author{
     color:var(--soft-blue);
     display: flex;
     align-items: center;
+    border-top: 0.5px solid var(--very-dark-blue-card-line);
+    padding-top: 10px;
+
 }
 span.full-name{
     color: var(--cyan);
@@ -104,5 +113,37 @@ div.details-container{
 }
 
 img.avatar-img{
-    height: 40px;
+    width: 30px;
+    margin-right: 10px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+}
+
+div.informations-container{
+    width:var(--img-width);
+}
+
+img.icon {
+    padding-right: 5px;
+}
+
+img.icon-time{
+    padding-right: 10px;
+}
+
+
+div, h1,p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+h1.title:hover {
+    color: var(--cyan) ;
+    cursor: pointer;
+}
+
+span.full-name:hover {
+    color: var(--cyan) ;
+    cursor: pointer;
 }
